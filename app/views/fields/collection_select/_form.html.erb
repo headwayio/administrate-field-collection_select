@@ -4,7 +4,7 @@
 <div class='field-unit__field'>
   <%= f.collection_select(
     field.selectable_ids&.to_sym || field.attribute,
-    field.selectable_collection,
+    field.selectable_collection.call,
     field.selectable_value,
     field.selectable_text,
     field.selectable_options,

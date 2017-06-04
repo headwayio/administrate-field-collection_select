@@ -45,7 +45,7 @@ module Administrate
       end
 
       def collection
-        @collection ||= options.fetch(:collection, [])
+        @collection ||= options.fetch(:collection, proc { [] })
       end
 
       def value_method
