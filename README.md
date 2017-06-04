@@ -16,16 +16,15 @@ Run:
 $ bundle install
 ```
 
-**NOTE:** Make sure you don't `.freeze` your `ATTRIBUTE_TYPES` constant if you specify a collection query otherwise new items from the db won't show up in your drop down until you reboot the server.
-
 Add to your `FooDashboard`:
 
 Supports all of the options that a normal Rails collection_select does including `multiple: true`
 
+**NOTE:** Make sure to specify the collection query as a `proc`
 ```ruby
 ATTRIBUTE_TYPES = [
   bars: Field::CollectionSelect.with_options(
-    collection: Bar.all,
+    collection: proc { Bar.all },
     value_method: :id,
     text_method: :name,
     options: {
