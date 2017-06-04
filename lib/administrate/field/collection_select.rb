@@ -10,6 +10,10 @@ module Administrate
         @show_text ||= options.fetch(:show_text, data)
       end
 
+      def selectable_ids
+        ids
+      end
+
       def selectable_collection
         collection
       end
@@ -35,6 +39,10 @@ module Administrate
       end
 
       private
+
+      def ids
+        @ids ||= options.fetch(:ids, nil)
+      end
 
       def collection
         @collection ||= options.fetch(:collection, [])

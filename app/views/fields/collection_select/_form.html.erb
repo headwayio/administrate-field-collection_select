@@ -3,7 +3,7 @@
 </div>
 <div class='field-unit__field'>
   <%= f.collection_select(
-    field.attribute,
+    field.selectable_ids&.to_sym || field.attribute,
     field.selectable_collection,
     field.selectable_value,
     field.selectable_text,
