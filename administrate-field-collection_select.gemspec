@@ -1,5 +1,6 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 GEM_NAME = 'collection_select'
@@ -8,7 +9,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = '0.3.0'
+  gem.version       = '0.3.1'
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 
