@@ -8,7 +8,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = '0.3.0'
+  gem.version       = '0.4.0'
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 
@@ -24,9 +24,9 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'bundler', '~> 1.14'
-  gem.add_development_dependency 'rake', '~> 10.0'
-  gem.add_development_dependency 'rspec', '~> 3.0'
-  gem.add_dependency 'administrate', '~> 0.7'
-  gem.add_dependency 'rails', '~> 5.0'
+  gem.add_development_dependency 'bundler', '~> 2.3.19'
+  gem.add_development_dependency 'rake', '~> 13.0.6'
+  gem.add_development_dependency 'rspec', '~> 3.12.0'
+  gem.add_dependency 'administrate', '~> 0.18'
+  gem.add_dependency 'rails', '~> 7.0'
 end
