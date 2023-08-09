@@ -8,7 +8,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = '0.3.0'
+  gem.version       = '0.4.0'
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 
