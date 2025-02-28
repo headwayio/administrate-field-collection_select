@@ -8,7 +8,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = '0.4.0'
+  gem.version       = '0.4.1'
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 
@@ -27,5 +27,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency 'rspec', '~> 3.4'
   gem.add_dependency 'administrate', '>= 0.7', '< 1.0'
-  gem.add_dependency 'rails', '> 5.0', '< 7.1'
 end
