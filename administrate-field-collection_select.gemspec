@@ -27,5 +27,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency 'rspec', '~> 3.4'
   gem.add_dependency 'administrate', '>= 0.7', '< 1.0'
-  gem.add_dependency 'rails', '> 5.0', '< 7.1'
 end
